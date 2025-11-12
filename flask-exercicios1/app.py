@@ -10,3 +10,8 @@ def index():
 def versao():
     versao = "1.0.0"
     return f"App v{versao}"
+# Exercício 3 
+@app.route('/saudar/<nome>')
+def saudar(nome):
+    nome = nome.capitalize()
+    return f"Olá, {nome}!"
