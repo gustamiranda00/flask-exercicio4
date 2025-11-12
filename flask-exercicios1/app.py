@@ -20,3 +20,7 @@ def saudar(nome):
 def quadrado(n):
     resultado = n ** 2
     return f"{n}² = {resultado}"
+# Exercício 5 
+@app.route('/home')
+def home():
+    return redirect(url_for('index'))
